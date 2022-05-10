@@ -1,4 +1,6 @@
 <?php
+include "../Register/header.php";
+
 /**
  * Joy of PHP sample code
  * Demonstrates how to create a database, create a table, and insert records.
@@ -116,3 +118,5 @@ echo mysqli_error($mysqli);
 $mysqli->close();
 //include 'footer.php';
 ?>
+
+<p> <a href="../TheSite/AccessPage.php">AccessPage</a> </p>

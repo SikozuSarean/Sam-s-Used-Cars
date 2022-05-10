@@ -11,6 +11,10 @@ include "../Register/header.php";
 echo "Test"
 ?>
 
-<p> <a href="../Register/login.php" style="color: blue;">Access Page</a> </p>
+<p> <a href="../Register/login.php" style="color: blue;">Login Page</a> </p>
+
+<p> <a href="../TheSite\dbInsert.php" style="color: red;">Force Insert Data in DB</a> </p>
+
+<p> <a href="../TheSite/AllCarsView.php" style="color: green;">All Cars View</a> </p>
 
 </html>
