@@ -91,7 +91,7 @@ $counter = 0;
 while ($result_ar = mysqli_fetch_assoc($result)) {
     echo "<tr class=\"$class\">";
     $counter++;
-    echo "<td><a href='viewcar.php?VIN=".$result_ar['VIN']."'>" . $result_ar['Make'] . "</a></td>";
+    echo "<td><a href='CarView.php?VIN=".$result_ar['VIN']."'>" . $result_ar['Make'] . "</a></td>";
     echo "<td>" . $result_ar['Model'] . "</td>";
        echo "<td>" . $result_ar['ASKING_PRICE'] . "</td>";
         echo "<td>

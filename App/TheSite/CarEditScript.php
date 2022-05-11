@@ -4,7 +4,7 @@
 </head>
 <body bgcolor="#FFFFFF" text="#000000" >
     
-    <?php
+<?php
 include "../Register/header.php";
 
 include 'db.php';
