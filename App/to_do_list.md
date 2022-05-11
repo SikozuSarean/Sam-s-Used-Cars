@@ -1,0 +1,2 @@
+- [X] Create delete script
+- [] In CarDelete.php add delete all images from secondary db table after creating that part ofcourse

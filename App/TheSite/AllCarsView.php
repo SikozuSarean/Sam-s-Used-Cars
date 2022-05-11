@@ -95,8 +95,12 @@ while ($result_ar = mysqli_fetch_assoc($result)) {
     echo "<td>" . $result_ar['Model'] . "</td>";
        echo "<td>" . $result_ar['ASKING_PRICE'] . "</td>";
         echo "<td>
-        <a href='FormEdit.php?VIN=".$result_ar['VIN']."'>Edit</a> 
-        <a onClick=\"javascript: return confirm('Please confirm deletion');\" href='deletecar.php?VIN=".$result_ar['VIN']."' >Delete</a>
+        <a href='CarEditView.php?VIN=".$result_ar['VIN']."'>Edit</a> 
+
+        <a onClick=\"javascript: return confirm('Are you sure you want to delete this?');\" 
+        href='CarDelete.php?VIN=".$result_ar['VIN']."' 
+        style='color: red;''>Delete</a>
+
         </td>";
    echo "</tr>\n";
    
