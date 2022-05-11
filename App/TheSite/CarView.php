@@ -2,6 +2,7 @@
 <head>
 <title>Sam's Used Cars</title>
 </head>
+<p><a href="AllCarsView.php">View Cars with Edit Links</a></p>
 
 <h1>Sam's Used Cars</h1>
 <?php

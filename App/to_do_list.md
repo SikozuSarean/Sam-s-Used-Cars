@@ -2,3 +2,4 @@
 - [] In CarDelete.php add delete all images from secondary db table after creating that part ofcourse
 - [X] Create Car View
 - [] In CarView add images of the car
+- [X] Create Add New Car

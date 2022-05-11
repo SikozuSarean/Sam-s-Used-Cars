@@ -3,6 +3,8 @@ include "../Register/header.php";
 
 ?>
 <p> <a href="../TheSite/AccessPage.php">AccessPage</a> </p>
+<p> <a href="SubmitNewCarView.php">Submit a new car</a> </p>
+
 
 <html>
 <head>
