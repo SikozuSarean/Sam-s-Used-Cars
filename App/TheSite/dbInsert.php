@@ -70,7 +70,7 @@ else
     echo "<p>***********</p>";
 } */
 
-// Insert 27 other cars
+// Insert 29 other cars
 $query3 = "INSERT INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`)
  VALUES
 ('1FAFP44423F44657', 2003, 'Ford', 'Mustang', 'Base', 'Silver / Black', 'Gray', 8995, NULL, 6746, 75820, 'Automatic', '2013-01-14', NULL),
@@ -109,7 +109,7 @@ if ($mysqli->query($query3) === TRUE) {
 else
 {
 echo mysqli_error($mysqli);
-    echo "<p>Error Inserting 27 cars: </p>" . printf("Errormessage: %s\n", $mysqli->error);
+    echo "<p>Error Inserting 29 cars: </p>" . printf("Errormessage: %s\n", $mysqli->error);
     echo "<p>***********</p>";
     echo $query3;
     echo "<p>***********</p>";

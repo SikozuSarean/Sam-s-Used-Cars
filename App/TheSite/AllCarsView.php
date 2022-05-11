@@ -2,6 +2,7 @@
 include "../Register/header.php";
 
 ?>
+<p> <a href="../TheSite/AccessPage.php">AccessPage</a> </p>
 
 <html>
 <head>
@@ -85,17 +86,18 @@ echo "<th style='width: 50px'>Action</th>";
 echo "</tr>\n";
 
 $class ="odd";  // Keep track of whether a row was even or odd, so we can style it later
-
+$counter = 0;
 // Loop through all the rows returned by the query, creating a table row for each
 while ($result_ar = mysqli_fetch_assoc($result)) {
     echo "<tr class=\"$class\">";
+    $counter++;
     echo "<td><a href='viewcar.php?VIN=".$result_ar['VIN']."'>" . $result_ar['Make'] . "</a></td>";
     echo "<td>" . $result_ar['Model'] . "</td>";
        echo "<td>" . $result_ar['ASKING_PRICE'] . "</td>";
         echo "<td>
-        <a href='FormEdit.php?VIN=".$result_ar['VIN']."'>Edit</a>  
-        <a href='deletecar.php?VIN=".$result_ar['VIN']."'>Delete</a>
-        </td>";
+        <a href='FormEdit.php?VIN=".$result_ar['VIN']."'>Edit</a> 
+        <a href='deletecar.php?VIN=".$result_ar['VIN']."' data-confirm='qq'>Delete</a>
+        </td>"; //onclick="return confirm('Are you sure you want to force insert data in the DB?');"
    echo "</tr>\n";
    
    // If the last row was even, make the next one odd and vice-versa
@@ -107,12 +109,12 @@ while ($result_ar = mysqli_fetch_assoc($result)) {
         $class="odd";
     }
 }
+echo "$counter Cars in total in the data base";
 echo "</table>";
 $mysqli->close();
 //include 'footer.php'
 ?>
 	 
  </body>
- <p> <a href="../TheSite/AccessPage.php">AccessPage</a> </p>
 
 </html>
