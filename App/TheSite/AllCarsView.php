@@ -96,8 +96,8 @@ while ($result_ar = mysqli_fetch_assoc($result)) {
        echo "<td>" . $result_ar['ASKING_PRICE'] . "</td>";
         echo "<td>
         <a href='FormEdit.php?VIN=".$result_ar['VIN']."'>Edit</a> 
-        <a href='deletecar.php?VIN=".$result_ar['VIN']."' data-confirm='qq'>Delete</a>
-        </td>"; //onclick="return confirm('Are you sure you want to force insert data in the DB?');"
+        <a onClick=\"javascript: return confirm('Please confirm deletion');\" href='deletecar.php?VIN=".$result_ar['VIN']."' >Delete</a>
+        </td>";
    echo "</tr>\n";
    
    // If the last row was even, make the next one odd and vice-versa
