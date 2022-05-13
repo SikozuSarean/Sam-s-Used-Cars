@@ -15,60 +15,9 @@ $mysqli = $conn;
   
 
 
-/* $mysqli->select_db("Cars");
+ $mysqli->select_db("Cars");
    Echo ("Selected the Cars database");
 
-$query = " CREATE TABLE inventory 
-( Crt int(255) PRIMARY KEY AUTO_INCREMENT, VIN varchar(17) , YEAR INT, Make varchar(50), Model varchar(100), 
-TRIM varchar(50), EXT_COLOR varchar (50), INT_COLOR varchar (50), ASKING_PRICE DECIMAL (10,2), 
-SALE_PRICE DECIMAL (10,2), PURCHASE_PRICE DECIMAL (10,2), MILEAGE int, TRANSMISSION varchar (50), 
-PURCHASE_DATE DATE, SALE_DATE DATE)";
-//echo "<p>***********</p>";
-//echo $query ;
-//echo "<p>***********</p>";
-if ($mysqli->query($query) === TRUE) 
-{
-    echo "Database table 'INVENTORY' created</P>";
-}
-else
-{
-    echo "<p>Error: </p>" . $mysqli->error;
-}
-// Dates are stored in MySQL as 'YYYY-MM-DD' format
-$query = "INSERT INTO `Cars`.`inventory` 
-(`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`) 
-VALUES 
-('5FNYF4H91CB054036', '2012', 'Honda', 'Pilot', 'Touring', 'White Diamond Pearl', 'Leather', '37807', NULL, '34250', '7076', 'Automatic', '2012-11-08', NULL);";
- */
-
-/* if ($mysqli->query($query) === TRUE) {
-    echo "<p>Honda Pilot inserted into inventory table. </p>";
-}
-else
-{
-    echo "<p>Error inserting Honda Pilot: </p>" . $mysqli->error;
-    echo "<p>***********</p>";
-    echo $query ;
-    echo "<p>***********</p>";
-}
-
-// Insert a Dodge Durango
-
-$query = "INSERT INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`) 
-VALUES 
-('LAKSDFJ234LASKRF2', '2009', 'Dodge', 'Durango', 'SLT', 'Silver', 'Black', '2700', NULL, '2000', '144000', '4WD Automatic', '2012-12-05', NULL);";
-
-
-if ($mysqli->query($query) === TRUE) {
-    echo "<p>Dodge Durango inserted into inventory table.</p>";
-}
-else
-{
-    echo "<p>Error Inserting Dodge: </p>" . $mysqli->error;
-    echo "<p>***********</p>";
-    echo $query ;
-    echo "<p>***********</p>";
-} */
 
 // Insert 29 other cars
 $query3 = "INSERT INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`)
@@ -104,7 +53,7 @@ $query3 = "INSERT INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM
 ('YV4SZ592561219696', 2006, 'Volvo', 'XC70', 'AWD', 'Willow Green Metallic', 'Taupe Leather', 14996, NULL, 11247, 83664, '5-Speed Automatic w/ Geartronic', '2013-01-14', NULL);
 ";
 if ($mysqli->query($query3) === TRUE) {
-    echo "<p>27 cars inserted into inventory table.</p>";
+    echo "<p>29 cars inserted into inventory table.</p>";
 }
 else
 {
