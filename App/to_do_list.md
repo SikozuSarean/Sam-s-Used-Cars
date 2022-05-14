@@ -3,4 +3,5 @@
 - [X] Create Car View
 - [] In CarView add images of the car
 - [X] Create Add New Car
-- [] Test optimize and debug if necessary "Create db" from Register and TheSite
+- [X] Test, optimize and debug if necessary "Create db" from Register and TheSite
+- [] Create Add Users Bulk in DB
