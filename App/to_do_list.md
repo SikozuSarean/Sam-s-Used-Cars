@@ -1,7 +1,6 @@
 - [X] Create delete script
-- [] In CarDelete.php add delete all images from secondary db table after creating that part ofcourse
 - [X] Create Car View
-- [] In CarView add images of the car
+- [X] In CarView add images of the car
 - [X] Create Add New Car
 - [X] Test, optimize and debug if necessary "Create db" from Register and TheSite
 - [] Create Add Users Bulk in DB
