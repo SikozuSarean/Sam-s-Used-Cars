@@ -5,4 +5,6 @@
 - [X] Create Add New Car
 - [X] Test, optimize and debug if necessary "Create db" from Register and TheSite
 - [] Create Add Users Bulk in DB
-- [] Create upload Images
+- [X] Create upload Images
+- [] Add delete individual images
+- [] Modify delete button to delete from database all entry from the VIM found

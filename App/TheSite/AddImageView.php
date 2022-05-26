@@ -38,7 +38,7 @@ echo "<p>Asking Price: $".number_format($price,0) ."</p>";
    
 ?>
 
-<form action="upload_file.php" method="post" enctype="multipart/form-data">
+<form action="AddImageScript.php" method="post" enctype="multipart/form-data">
 <label for="file">Filename:</label>
 <input type="file" name="file" id="file"><br>
 <input name="VIN" type="hidden" value= "<?php echo "$vin" ?>" />
@@ -53,7 +53,7 @@ if ($result = $mysqli->query($query)) {
    // Loop through all the rows returned by the query, creating a table row for each
 while ($result_ar = mysqli_fetch_assoc($result)) {
     $image = $result_ar['ImageFile'];
-    echo "<img src='uploads/$image' width= '250'>  " ;
+    echo "<img src='car images/$image' width= '250'>  " ;
 }
 }
 $mysqli->close();

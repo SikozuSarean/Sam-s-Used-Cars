@@ -99,6 +99,9 @@ while ($result_ar = mysqli_fetch_assoc($result)) {
         echo "<td>
         <a href='CarEditView.php?VIN=".$result_ar['VIN']."'>Edit</a> 
 
+        <a href='AddImageView.php?VIN=".$result_ar['VIN']."'>Upload Image</a> 
+
+
         <a onClick=\"javascript: return confirm('Are you sure you want to delete this?');\" 
         href='CarDelete.php?VIN=".$result_ar['VIN']."' 
         style='color: red;''>Delete</a>
