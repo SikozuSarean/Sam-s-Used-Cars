@@ -5,6 +5,9 @@
 <body background="bg.jpg">
 <h1>Sam's Used Cars</h1>
 <h3>Add Image</h3>
+
+<p> <a href="../TheSite/AllCarsView.php" style="color: green" data-confirm="qqq">All Cars View</a> </p>
+
 <?php 
 include "../Register/header.php";
 include 'db.php';

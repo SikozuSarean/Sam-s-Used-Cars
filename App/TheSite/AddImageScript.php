@@ -1,3 +1,6 @@
+<p> <a href="../TheSite/AllCarsView.php" style="color: green" data-confirm="qqq">All Cars View</a> </p>
+
+
 <?php
 include "../Register/header.php";
 include 'db.php';
@@ -52,11 +55,11 @@ if ($result = $mysqli->query($query)) {
     {
         echo "Error entering $VIN into database: " . mysqli_error($mysqli)."<br>";
     }
-    $mysqli->close();
     echo "<img src='$imagename' width='150'><br>";
 
 } else{
     echo "There was an error uploading the file, please try again!";
 }
   }
+$mysqli->close();
 ?> 

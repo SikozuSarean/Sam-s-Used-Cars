@@ -6,4 +6,5 @@
 - [] Create Add Users Bulk in DB
 - [X] Create upload Images
 - [] Add delete individual images
+-- [] Sam-s-Used-Cars\App\TheSite\ImageDelete.php work in progress
 - [] Modify delete button to delete from database all entry from the VIM found
