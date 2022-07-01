@@ -19,3 +19,5 @@ else
 }
 $mysqli->close();
 ?>
+
+<p> <a href="../TheSite/AccessPage.php">AccessPage</a> </p>
