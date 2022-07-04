@@ -10,7 +10,7 @@ $errors = array();
 //$db = mysqli_connect('localhost', 'root', '', 'registration');
 include "../TheSite/db.php";
 $db = $conn;
-$db->select_db("registration");
+$db->select_db("cars");
 
 
 // REGISTER USER

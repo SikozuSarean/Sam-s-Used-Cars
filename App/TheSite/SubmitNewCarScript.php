@@ -39,7 +39,7 @@ $mysqli->select_db("cars");
   echo 'Connected successfully to mySQL. <BR>'; 
   
 //select a database to work with
-$mysqli->select_db("Cars");
+$mysqli->select_db("cars");
    Echo ("Selected the Cars database. <br>");
 
 /* Try to insert the new car into the database */

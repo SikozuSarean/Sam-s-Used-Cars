@@ -14,14 +14,14 @@ $mysqli = $conn;
   echo 'Connected successfully to mySQL. <BR>'; 
   
 // Create database
-$sql = "CREATE DATABASE Cars";
-if ($mysqli->query($sql) === TRUE) {
-  echo "Database created successfully";
-} else {
-  echo "Error creating database: " . $mysqli->error;
-}
+// $sql = "CREATE DATABASE cars";
+// if ($mysqli->query($sql) === TRUE) {
+//   echo "Database created successfully";
+// } else {
+//   echo "Error creating database: " . $mysqli->error;
+// }
 
- $mysqli->select_db("Cars");
+ $mysqli->select_db("cars");
    Echo ("Selected the Cars database");
 
 $query = " CREATE TABLE inventory 

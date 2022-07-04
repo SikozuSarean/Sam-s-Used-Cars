@@ -12,14 +12,14 @@ $mysqli = $conn;
   echo 'Connected successfully to mySQL. <BR>'; 
 
 // Create database
-$sql = "CREATE DATABASE registration";
-if ($mysqli->query($sql) === TRUE) {
-  echo "Database created successfully";
-} else {
-  echo "Error creating database: " . $mysqli->error;
-}
+// $sql = "CREATE DATABASE registration";
+// if ($mysqli->query($sql) === TRUE) {
+//   echo "Database created successfully";
+// } else {
+//   echo "Error creating database: " . $mysqli->error;
+// }
 
- $mysqli->select_db("registration");
+ $mysqli->select_db("cars");
    Echo ("Selected the users database");
 
 $query = " CREATE TABLE `users` (
