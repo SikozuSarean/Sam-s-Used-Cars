@@ -22,7 +22,7 @@ $mysqli = $conn;
 // }
 
  $mysqli->select_db("cars");
-   Echo ("Selected the Cars database");
+   Echo ("Selected the Cars database ");
 
 $query = " CREATE TABLE inventory 
 ( Crt int(255) PRIMARY KEY AUTO_INCREMENT, VIN varchar(17) , YEAR INT, Make varchar(50), Model varchar(100), 

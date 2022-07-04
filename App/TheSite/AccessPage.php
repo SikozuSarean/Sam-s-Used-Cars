@@ -17,7 +17,7 @@ echo "Test"
 style="color: red;">Create Users TABLE</a> </p> 
 
 <p> <a href="../TheSite/Create db.php" onclick="return confirm('Are you sure you want to create the Cars DB?');" 
-style="color: red;">Create Cars TABLE</a> </p> 
+style="color: red;">Create Inventory TABLE</a> </p> 
 
 <p> <a href="../TheSite/CreateImagesTable.php" onclick="return confirm('Are you sure you want to create the Images Table?');" 
 style="color: red;">Create Images Table</a> </p> 
