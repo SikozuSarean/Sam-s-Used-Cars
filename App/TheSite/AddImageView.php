@@ -14,7 +14,7 @@ include 'db.php';
 $mysqli = $conn;
 $mysqli->select_db("cars");
 $vin = $_GET['VIN'];
-$query = "SELECT * FROM INVENTORY WHERE VIN='$vin'";
+$query = "SELECT * FROM inventory WHERE VIN='$vin'";
 /* Try to query the database */
 if ($result = $mysqli->query($query)) {
 }

@@ -58,7 +58,7 @@ if ($result = $mysqli->query($query)) {
     echo "<img src='$imagename' width='150'><br>";
 
 } else{
-    echo "There was an error uploading the file, please try again!";
+    echo "There was an error uploading the file, please try again! Check the permission for chown www-data: www-data to be allowed to move the files from temp to new folder.";
 }
   }
 $mysqli->close();
